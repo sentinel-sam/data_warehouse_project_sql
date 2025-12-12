@@ -1,6 +1,8 @@
 /*
 ===============================================================================
 Stored Procedure: Load Bronze Layer (Source -> Bronze)
+Store Procedure Creation Purpose:
+    This script will be used frequently
 ===============================================================================
 Script Purpose:
     This stored procedure loads data into the 'bronze' schema from external CSV files. 
@@ -19,6 +21,10 @@ Usage Example:
 
 -- SELECT * FROM bronze.crm_cust_info;
 -- SELECT COUNT(*) FROM bronze.crm_cust_info;
+
+
+--Only run this command to execute the stored procedure
+-- EXEC bronze.load_bronze
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
